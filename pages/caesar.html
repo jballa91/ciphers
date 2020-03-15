@@ -1,0 +1,42 @@
+<head>
+    <meta charset="utf-8">
+
+    <title>Ciphers</title>
+    <meta name="description" content="ciphers and such">
+    <meta name="author" content="James Ballard">
+
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="/scripts/caesar-handler.js"></script>
+</head>
+
+<body class="page">
+    <h1>The Caesar Cipher</h1>
+    <p class="info">
+        The Caesar Cipher is a simple substitution cipher, which many claim Julius Caesar himself popularized.
+        It is a simple <a href="https://en.wikipedia.org/wiki/Substitution_cipher">substitution cipher</a>,
+        not used often in modern times. It shifts thealphabet over
+        a number of characters to hide messages. Caesar was known to use the number 3 often, and the cipher
+        which carries his name often defaults to a shift of three!
+    </p>
+
+    <h3>Try it for yourself!</h3>
+    <form action="" method="get" class="input-form">
+        <div class="input-form">
+            <label for="shift">Enter your shift amount:</label>
+            <textarea name="shift" id="shift" class="shift"></textarea>
+        </div>
+
+        <div class="input-form">
+            <label for="message">Enter your message:</label>
+            <textarea name="message" id="input" class="message">You can type out anything you want!</textarea>
+            <button id="submit-button" class="submit" type="button">Encode</button>
+        </div>
+    </form>
+
+    <p id="encoded"></p>
+
+    <a href="/index.html" class="button-link"><button class="nav">Home</button></a>
+</body>
+<footer>This site created by James Ballard</footer>
+
+</html>

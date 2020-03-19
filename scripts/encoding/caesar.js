@@ -33,6 +33,7 @@ const caesar = (shift, msg) => {
 };
 
 export { caesar };
+// module.exports = caesar;
 // Some test calls
 // console.log(caesar(3, msg));
 // console.log(caesar(23, msg2));

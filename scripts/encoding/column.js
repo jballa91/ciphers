@@ -1,14 +1,7 @@
 
 // Some Test variables
 // const key = 'cat';
-// const msg = 'You can type out anything you want!.'
-
-
-
-/* Going to need the alphabet for Indices to
-    order the columns and eliminate punctuation */
-
-
+// const msg = 'You can type out anything you want!'
 
 // Give a way to make and interact with columns
 class Column {
@@ -26,6 +19,8 @@ class Column {
 
 const columnEncode = (key, msg, x) => {
     // Declare some more variables    
+    /* Going to need the alphabet for Indices to
+    order the columns and eliminate punctuation */
     const alphArr = 'abcdefghijklmnopqrstuvwxyz'.split('');
     let keyArr = key.toLowerCase().split('');
     let msgArr = msg.toLowerCase().split('').filter(el => (el !== ' '));
@@ -83,7 +78,7 @@ const columnEncode = (key, msg, x) => {
 export { columnEncode }
 
 // Some test calls
-// console.log(columnEncode('ca3t', 'hello what are you doing'))
+// console.log(columnEncode('cat', 'hello what are you doing'))
 // console.log(columnEncode(key, msg, 3));
 // console.log('CDITPIUUURAAATNUNIMINOOITLGSECEQQISIRALGASAEDN');
-// console.log(columnEncode(key, msg, 3) === 'CDITPIUUURAAATNUNIMINOOITLGSECEQQISIRALGASAEDN');
+// console.log(columnEncode(key, msg, 3) === 'ATUOEPYTNACUOYTNAWUOYGNIHTYN');

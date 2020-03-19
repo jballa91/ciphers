@@ -1,4 +1,4 @@
-import { caesar } from '/scripts/caesar.js';
+import { caesar } from '/scripts/encoding/caesar.js';
 
 // document.addEventListener('DOMContentLoaded', event => {
 //     const submit = document.getElementById('submit-button');

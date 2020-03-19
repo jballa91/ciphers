@@ -1,4 +1,4 @@
-import { polybius } from '/scripts/polybius.js'
+import { polybius } from '/scripts/encoding/polybius.js'
 
 document.addEventListener('DOMContentLoaded', event => {
 

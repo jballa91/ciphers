@@ -1,4 +1,4 @@
-import { columnEncode } from '/scripts/column.js';
+import { columnEncode } from '/scripts/encoding/column.js';
 
 document.addEventListener('DOMContentLoaded', event => {
 

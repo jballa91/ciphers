@@ -1,0 +1,72 @@
+body {
+    background-color: gray;
+}
+
+h1 {
+    margin: 10px 0 11px 0;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 2em;
+}
+
+.input-form {
+    background-color: darkgray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-form > div {
+    padding: 5px 5px;
+}
+
+.submit {
+    width: 100px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.submit:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+}
+
+.message,
+.x {
+    background-color: lightgrey;
+    color: black;
+    width: 500px;
+    height: 32px;
+}
+
+.nav-button {
+    background-color: darkcyan;
+    border: 1px solid black;
+    color: white;
+    border-radius: 3px;
+    width: 100px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: top;
+}
+
+.nav-button:hover {
+    background-color: lightseagreen;
+}
+
+#encoded { 
+    width: 1000px;
+    margin: 0;
+    color: white;
+    align-items: center;
+}
+
+.info {
+    margin: 0;
+}

@@ -4,37 +4,39 @@
     <title>Ciphers</title>
     <meta name="description" content="ciphers and such">
     <meta name="author" content="James Ballard">
-
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/page.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <script type="module" src="/scripts/pageHandlers/polybius-handler.js"></script>
 </head>
 
 <body class="page">
-    <h1>The Polybius Cypher</h1>
-    <p class="info">
-        The Polybius Cipher was invented by the ancient Greeks, and is a relatively simple cipher.
-        It uses a table to arrange the alphabet into five rows and columns, and each number in the
-        encoded message relates to a character on the grid. For example, the character at square 1-1
-        would be encoded as '11'. Because the greek alphabet only had 24 characters, they omitted the
-        square at 5-5. However in the English language there are 26 characters, so I and J are often
-        combined at square 2-4. It's kind of funny that because we don't use 24 characters like the
-        creators did that we use 24 to represent two different characters, don't you think?
-    </p>
-
-    <h3>Try it for yourself!</h3>
-    <form action="" method="get" class="input-form">
-        <div class="input-form">
-            <label for="message">Enter your message:</label>
-            <textarea name="message" id="input" class="message">You can type out anything you want!</textarea>
-            <button id="submit-button" class="submit" type="button">Encode</button>
-        </div>
-    </form>
-
-
-    <p id="encoded"></p>
-    <p></p>
+    <div class="information">
+        <h1>The Polybius Cypher</h1>
+        <p class="info">
+            The Polybius Cipher was invented by the ancient Greeks, and is a relatively simple cipher.
+            It uses a table to arrange the alphabet into five rows and columns, and each number in the
+            encoded message relates to a character on the grid. For example, the character at square 1-1
+            would be encoded as '11'. Because the greek alphabet only had 24 characters, they omitted the
+            square at 5-5. However in the English language there are 26 characters, so I and J are often
+            combined at square 2-4. It's kind of funny that because we don't use 24 characters like the
+            creators did that we use 24 to represent two different characters, don't you think?
+        </p>
+    </div>
+    <div class="form-container">
+        <h3>Try it for yourself!</h3>
+        <form action="" method="get" class="input-form">
+            <div class="input-form">
+                <label for="message">Enter your message:</label>
+                <textarea name="message" id="input" class="message">You can type out anything you want!</textarea>
+                <button id="submit-button" class="submit" type="button">Encode</button>
+            </div>
+        </form>
+    </div>
 
     <a href="/index.html" class="button-link"><button class="nav">Home</button></a>
+    <p id="encoded"></p>
+
+
 
 
 

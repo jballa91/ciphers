@@ -1,0 +1,49 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: darkgray;
+}
+main {
+    background-color: lightgray;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+button {
+    background-color: darkcyan;
+    border: 1px solid black;
+    color: white;
+    border-radius: 3px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: lightseagreen;
+}
+
+.button-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.button-holder > div:first-child {
+    border-right: 1px solid darkgray;
+}
+
+.button-holder > div:last-child {
+    border-left: 1px solid darkgray;
+}
+
+.cipher-container {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cipher-container__description {
+    margin: 0;
+    text-align: center;
+}

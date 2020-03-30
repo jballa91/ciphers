@@ -4,41 +4,44 @@
     <title>Ciphers</title>
     <meta name="description" content="ciphers and such">
     <meta name="author" content="James Ballard">
-
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/page.css">
+    <link rel="stylesheet" href="/styles/index.css">
     <script type="module" src="/scripts/pageHandlers/column-handler.js"></script>
 </head>
 
 <body class="page">
-    <h1>The Column Cipher</h1>
-    <p class="info">
-        The column cipher is a <a href="https://en.wikipedia.org/wiki/Classical_cipher">classical cipher</a>, which
-        was in use for military purposes on its own and as a component of more complex ciphers well into the 1950s.
-        I don't feel like typing out the entire history and mechanism of classical transposition ciphers right now,
-        but I will get back to this text block at a later date and provide more information.
-    </p>
+    <div class="information">
+        <h1>The Column Cipher</h1>
+        <p class="info">
+            The column cipher is a <a href="https://en.wikipedia.org/wiki/Classical_cipher">classical cipher</a>, which
+            was in use for military purposes on its own and as a component of more complex ciphers well into the 1950s.
+            I don't feel like typing out the entire history and mechanism of classical transposition ciphers right now,
+            but I will get back to this text block at a later date and provide more information.
+        </p>
+    </div>
+    <div class="form-container">
+        <h3>Try it for yourself!</h3>
+        <form action="" method="get" class="input-form">
+            <div class="input-form">
+                <label for="key">Enter your key, it should be a word: </label>
+                <textarea name="key" id="key" class="message"></textarea>
+            </div>
+            <div class="input-form">
+                <label for="message">Enter your message:</label>
+                <textarea name="message" id="input" class="message">You can type out anything you want!</textarea>
 
-    <h3>Try it for yourself!</h3>
-    <form action="" method="get" class="input-form">
-        <div class="input-form">
-            <label for="key">Enter your key, it should be a word: </label>
-            <textarea name="key" id="key" class="message"></textarea>
-        </div>
-        <div class="input-form">
-            <label for="message">Enter your message:</label>
-            <textarea name="message" id="input" class="message">You can type out anything you want!</textarea>
-
-        </div>
-        <div class="input-form">
-            <label for="x">How many times do you want to Column Encode?</label>
-            <textarea name="x" id="x" class="x">(One is the default)</textarea>
-        </div>
-        <button id="submit-button" class="submit" type="button">Encode</button>
-    </form>
-
+            </div>
+            <div class="input-form">
+                <label for="x">How many times do you want to Column Encode?</label>
+                <textarea name="x" id="x" class="x">(One is the default)</textarea>
+            </div>
+            <button id="submit-button" class="submit" type="button">Encode</button>
+        </form>
+    </div>
+    <a href="/index.html" class="nav-button">Home</a>
     <p id="encoded"></p>
 
-    <a href="/index.html" class="button-link"><button class="nav">Home</button></a>
+
 </body>
 <footer>This site created by James Ballard</footer>
 
